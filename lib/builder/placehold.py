@@ -1,5 +1,6 @@
 import os
 
+
 class Placehold:
 
     ENDPOINT = 'https://placehold.jp'
@@ -27,18 +28,18 @@ class Placehold:
 
     @staticmethod
     def __file_name(opts):
-        width  = opts.get('width', 150)
+        width = opts.get('width', 150)
         height = opts.get('height', 150)
         format = opts.get('format', 'png')
 
-        return "{width}x{height}.{format}".format(**vars())
+        return "%dx%d.%s" % (width, height, format)
 
     @staticmethod
     def __query_string(opts):
         text = opts.get('text', None)
 
         if text is not None:
-            query_string = "?text={text}".format(**vars())
+            query_string = "?text=%s" % text
         else:
             query_string = ''
 

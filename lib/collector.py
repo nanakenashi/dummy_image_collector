@@ -1,6 +1,7 @@
 from urllib import request
 from builder.placehold import Placehold
 
+
 class Collector:
 
     # TODO: assign dynamically builder class
