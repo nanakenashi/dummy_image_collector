@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 from urllib import request
 from builder.placehold import Placehold
 
 
 class Collector:
+
+    """ Read image content on the web and save it.
+    """
 
     # TODO: assign dynamically builder class
     def __init__(self, builder_name='placehold'):

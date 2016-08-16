@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
 import os
 
 
 class Placehold:
+
+    """ URL Builder class for 'https://placehold.jp'
+    """
 
     ENDPOINT = 'https://placehold.jp'
 
